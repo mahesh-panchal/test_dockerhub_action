@@ -1,9 +1,9 @@
 image: mbinzerpanchal/gitpod:master
 tasks:
   - name: test
-    env:
-      NFCORE_BUILD_PATH: /workspace/bin
-      PATH: "$NFCORE_BUILD_PATH:$PATH"
+#    env:
+#      NFCORE_BUILD_PATH: /workspace/bin
+#      PATH: "$NFCORE_BUILD_PATH:$PATH"
     command: |
       nextflow -version
 vscode:
