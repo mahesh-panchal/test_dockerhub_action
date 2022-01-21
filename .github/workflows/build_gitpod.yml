@@ -5,8 +5,8 @@ on:
   push:
     branches:
       - 'master'
-    paths:
-      - 'nf_core/gitpod/gitpod.Dockerfile'
+    # paths:
+    #  - 'nf_core/gitpod/gitpod.Dockerfile'
 
 jobs:
   push_to_registry:
