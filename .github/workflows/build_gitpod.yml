@@ -31,7 +31,7 @@ jobs:
         with:
           images: mbinzerpanchal/gitpod
           tags: |
-            type=semver,pattern={{raw}}
+            type=semver,pattern={{version}}
  
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
