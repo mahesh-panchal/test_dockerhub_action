@@ -30,8 +30,6 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: mbinzerpanchal/gitpod
-          tags: |
-            type=ref,event=tag
  
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
