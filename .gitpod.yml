@@ -1,11 +1,9 @@
 image: mbinzerpanchal/gitpod:master
 tasks:
   - name: test
-#    env:
-#      NFCORE_BUILD_PATH: /workspace/bin
-#      PATH: "$NFCORE_BUILD_PATH:$PATH"
     command: |
-      nextflow -version
+      NFCORE_BUILD_PATH=/workspace/bin
+      pip install --upgrade -r requirements-dev.txt -e . -t $NFCORE_BUILD_PATH
 vscode:
   extensions:                                # based on nf-core.nf-core-extensionpack
     - codezombiech.gitignore                 # Language support for .gitignore files
