@@ -5,15 +5,15 @@ on:
   push:
     branches:
       - 'master'
-    # paths:
-    #  - 'nf_core/gitpod/gitpod.Dockerfile'
+    paths:
+      - 'nf_core/gitpod/gitpod.Dockerfile'
 
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     # Only run for my repo, for releases and merged PRs
-    # if: ${{ github.repository == 'mahesh-panchal/test_dockerhub_action' }}
+    if: ${{ github.repository == 'mahesh-panchal/test_dockerhub_action' }}
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
