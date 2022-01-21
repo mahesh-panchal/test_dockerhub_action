@@ -20,4 +20,4 @@ RUN conda update -n base -c defaults conda && \
     nextflow self-update && \
     conda clean --all -f -y
 
-# Trigger comment
+# Trigger comment 
