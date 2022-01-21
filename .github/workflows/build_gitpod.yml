@@ -30,7 +30,6 @@ jobs:
         with:
           images: mbinzerpanchal/gitpod
           tags: |
-            # tag event
             type=ref,event=tag
  
       - name: Build and push Docker image
