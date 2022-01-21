@@ -1,3 +1,4 @@
+# Gitpod workspace: https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile
 FROM gitpod/workspace-full
 
 USER root
