@@ -19,3 +19,4 @@ RUN conda install nextflow nf-core pytest-workflow mamba -n base -c conda-forge 
     nextflow self-update && \
     conda clean --all -f -y
 
+# Trigger comment
